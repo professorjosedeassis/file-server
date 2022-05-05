@@ -1,0 +1,12 @@
+#smb.conf
+
+[nome da pasta]
+path = /caminho completo da pasta
+read only = yes/no (permissão de leitura e/ou leitura e escrita)
+valid users = usuario1, usuario2 etc. (usuários válidos)
+invalid users = usuario1, usuario2 etc. (usuários inválidos)
+read list = usuario1, usuario2 etc. (usuários com permissão somente leitura)
+write list = usuario1, usuario2 etc. (usuários com permissão de leitura e escrita)
+
+Para usar grupos, substituir os usuários pelo nome do grupo com "@" na frente
+@nome_grupo
