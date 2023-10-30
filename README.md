@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/file-server)
 # Linux File Server Level 1
-Este curso traz ao aluno uma oportunidade de negócio, muitas empresas de pequeno e médio porte necessitam de soluções eficazes para compartilhamento de arquivos na rede local. Neste tutorial você aprenderá passo a passo na prática a instalar e configurar um Servidor de Arquivos baseado no Linux para uma rede de pequeno ou médio porte. Este curso foi planejado em função de um projeto real.
+Este curso traz ao aluno uma oportunidade de negócio, muitas empresas de pequeno e médio porte necessitam de soluções eficazes para compartilhamento de arquivos na rede local. Você aprenderá passo a passo na prática a instalar e configurar um Servidor de Arquivos baseado no Linux para uma rede de pequeno ou médio porte. Este curso foi planejado em função de um projeto real.
 ### Autor
 Professor José de Assis
 ### Apresentação
