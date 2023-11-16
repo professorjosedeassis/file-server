@@ -7,6 +7,14 @@ Professor José de Assis
 [![File Server](https://img.youtube.com/vi/wGvCOMTVXWY/0.jpg)](https://youtu.be/wGvCOMTVXWY "Assistir no YouTube")
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/wGvCOMTVXWY?style=social)
+
+#### Checkout
+- [x] log das pastas compartilhadas
+- [x] Lixeira da pasta compartilhada
+- [ ] Scripty para backup.
+- [ ] cripty para remover arquivos com mais de xx dias da LIXEIRA.
+
+
 ### Iniciar curso:
 ▶️ [Playlist](https://www.youtube.com/playlist?list=PLbEOwbQR9lqx8dx4_RqSl97jTJoj7x_q-)
 ### Certificado deste curso:
