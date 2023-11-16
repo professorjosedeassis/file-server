@@ -1,0 +1,37 @@
+# Estas configurações deverá ser incluidas na seção global, a opção lixeira pode ser criado para cada compartilhamento serapado
+#distindindo assim as regras de cada um.
+#Testatdo e operando em um ubuntu server 20-04
+
+#Exemplo de configuração de log do samba 4 e lixeira
+
+#Inclusão do objeto de auditoria
+
+vsf objects = full_audit recycle (podera adicionar outros modulos separando com espaço)
+log file = dir_do_log/log.%U #o especificador (%U), indica que irá separa os registros de log por usuario
+max log size = 0
+log level = 2
+timestamp logs = Yes
+full_audit:prefix =Usuario=%u|-%U|-IP=%I|-Nome do PC=%m|-ID atual=%d|-Nome da pasta=%S| HORA=%T
+full_audit:facility = LOCAL5 # o mesmo indicado no arquivo auditsamba.conf
+full_audit:priority = NOTICE # o mesmo indicado no arquivo auditsamba.conf
+full_audit:success = rmdir, mkdir, read, write, rename, opendir, close, open, mv, pwrite, creat_file, sendfile, chmod
+# full_audit:failure = rmdir, mkdir, read, rename, connect, opendir, open
+full_audit:failure = none
+#	full_audit:log_secdesc = True
+
+
+syslog only = no
+# Nivél do syslog 0-3
+syslog = 3
+  ############Lixeira##########################
+ #crie uma pasta chamada lixeira, pois esta será sua lixeira
+ recycle:keeptree = yes
+ recycle:versions = yes
+ recycle:touch = True
+ recycle:touch_mtime = yes
+ recycle:repository = /dir_da_pasta_lixeira/%U #O especificador (%U) Separa por usuarios
+ recycle:facility - LOCAL1
+ recycle:priority = NOTICE
+ recycle:maxsize = 0
+ recycle:exclude = *.~*,~*.*,*.old,*.iso,*.tmp 
+  
